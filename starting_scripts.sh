@@ -8,11 +8,10 @@
 attkIP=$1
 vicIP=$2
 
-if [[ -z "$attkIP" ]]; then
-    echo "Usage: $0 attack box IP Vic IP"
-    exit 1
-else
-if [[ -z "$attkIP" ]]; then
-    echo "Usage: $0 attack box IP Vic IP"
+if [[ -z "$attkIP" || -z "$vicIP" ]]; then
+    echo "Usage: $0 <attack box IP> <victim IP>"
     exit 1
 fi
+
+# Continue with your script here...
+
